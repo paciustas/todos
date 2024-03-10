@@ -1,0 +1,94 @@
+
+* {
+  // padding: 0;
+  // margin: 0;
+  // box-sizing: border-box;
+  // outline: none;
+}
+
+html {
+
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.app {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.dnd-ghost {
+  opacity: 0.3;
+}
+
+.p-card-body, .p-dialog-header {
+  padding: 15px;
+}
+.p-dialog-content {
+  padding: 15px;
+  padding-top: 0;
+  overflow: visible;
+}
+.p-card-content {
+  padding: 0;
+}
+
+.p-tooltip-text {
+  padding: 4px 8px;
+  font-size: 14px;
+}
+
+.p-datepicker {
+  width: 200px !important;
+  table {
+    th {
+      font-weight: 500;
+    }
+    td {
+      padding: 0;
+      span {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}
+
+.todo-card {
+  width: 100%;
+  position: relative;
+  border: 2px solid rgba( 0, 0, 0, 0.05 );
+  .todo-card-actions {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    transition: 0.4s;
+    opacity: 0.3;
+    border-radius: 5px;
+    background: rgba( 0, 0, 0, 0.05 );
+    i {
+      padding: 4px 8px;
+      transition: 0.4s;
+      opacity: 0.3;
+      &:hover {
+        opacity: 1 !important;
+      }
+    }
+  }
+  &:hover {
+    .todo-card-actions {
+      opacity: 1;
+    }
+  }
+  &.completed {
+    text-decoration: line-through;
+    color: rgba( 0, 0, 0, 0.5 );
+  }
+  &.selected {
+    border-color: #4F46E5;
+  }
+}
